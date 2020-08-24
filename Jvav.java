@@ -9,11 +9,13 @@ public class Jvav{
         jvav.setSize(100, 100);
         JLabel jvav_and_you = new JLabel("J V A V与您");
         JLabel jvav_free_download = new JLabel("免费J V A V下 载");
-        JPanel panel=new JPanel();
+        JPanel panel=new JPanel(new GridLayout(3,1,5,5));
+        JPanel panel2=new JPanel(new FlowLayout());  
         panel.add(jvav);
         panel.add(jvav_and_you);
         panel.add(jvav_free_download);
-        frame.add(panel);
+        panel2.add(panel);
+        frame.add(panel2);
         frame.setVisible(true);
     }
 }
